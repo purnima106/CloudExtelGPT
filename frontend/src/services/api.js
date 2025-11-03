@@ -37,3 +37,18 @@ api.interceptors.response.use(
 
 export default api;
 
+// UI-only mode: backend disabled. The following helper stubs intentionally
+// reject so the UI can show a friendly message without making network calls.
+
+export const uploadExcelFile = async () => {
+  return Promise.reject(new Error('Feature disabled: backend is turned off in UI-only mode.'));
+};
+
+export const getDataPreview = async () => {
+  return Promise.reject(new Error('Feature disabled: backend is turned off in UI-only mode.'));
+};
+
+export const generateVisualization = async () => {
+  return Promise.reject(new Error('Feature disabled: backend is turned off in UI-only mode.'));
+};
+

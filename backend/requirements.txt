@@ -1,0 +1,19 @@
+# FastAPI and server dependencies
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6  # Required for file uploads
+
+# Data processing (versions compatible with Python 3.13 wheels)
+pandas==2.2.3
+openpyxl==3.1.2  # For reading .xlsx files
+xlrd==2.0.1  # For reading legacy .xls files
+numpy==2.1.3
+
+# Data validation
+pydantic==2.9.2
+pydantic-settings==2.1.0
+
+# Logging and utilities
+python-jose[cryptography]==3.3.0
+python-dotenv==1.0.0
+
